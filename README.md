@@ -48,5 +48,5 @@ Swapp is an app that **retrieves data from GraphQL server** and **explores some 
   - **Episode Page** - only **5 characters** should be loaded (fetched)
     - If the users clicks on the **Load More** button, **5 more characters** should be fetched from the server and presented
   - **Characters Page** - only **12 characters** should be loaded (fetched)
-     - If the users clicks on the **Load More** button, **12 more characters should be fetched from the server and presented
+     - If the users clicks on the **Load More** button, **12 more characters** should be fetched from the server and presented
   - **Character Page** - **all starships** should be loaded
