@@ -9,6 +9,7 @@ import Navigation from './components/common/Navigation';
 import Notification from './components/common/Notification';
 import Routes from './Routes';
 import Button from './components/common/Button';
+import LoginForm from './components/common/LoginForm';
 
 export default class App extends Component {
   constructor(props) {
@@ -43,7 +44,7 @@ export default class App extends Component {
           userLoggedIn={this.userLoggedIn}
         />
         <main className='content'>
-          <Button>alabala</Button>
+          <LoginForm />
           <Routes />
         </main>
         <Footer />

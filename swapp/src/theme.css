@@ -27,6 +27,7 @@ html {
   --radar-font-color: #4BD5EE;
   --radar-background-color: #000000;
   --radar-grid-color: #3C4858;
+  --logo-font-color: #FFE300;
 }
 
 html[data-theme="dark"] {
@@ -50,4 +51,5 @@ html[data-theme="dark"] {
     --radar-font-color: #FFE300;
     --radar-background-color: #000000;
     --radar-grid-color: #333333;
+    --logo-font-color: #FFE300;
 }
