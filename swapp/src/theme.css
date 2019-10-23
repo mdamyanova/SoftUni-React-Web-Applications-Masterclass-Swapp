@@ -7,30 +7,47 @@ html.color-theme-in-transition *:after {
 }
 
 html {
-  /* global colors */
-  --primaryTheme: #4E5B6E;
-
-  --primaryBg: #E8EAED;
-
-  --primaryText: #212121;
-  --secondaryText: #7b7b7b;
-
-  --primaryButtonText: #E5E9F2;
-
-  --primaryBorderBg: #E5E9F2;
-
-  --activeSelectionBg: rgba(162, 162, 162, 0.1);
-
-  --primaryShadowBg: rgba(204, 204, 204, 0.7);
+  --default-background-color: #E8EAED;
+  --default-font-color: #4E5B4E;
+  --card-border-color: #E5E9F2;
+  --card-background-color: #FFFFFF;
+  --button-background-color: #000000;
+  --button-border-color: #E5E9F2;
+  --button-font-color: #FFE300;
+  --outline-button-background-color: #EFF2F7;
+  --outline-button-border-color: #E5E9F2;
+  --outline-button-font-color: inherit;
+  --input-background-color: #EFF2F7;
+  --input-border-color: #E5E9F2;
+  --input-font-color: #3C4858;
+  --app-bar-background-color: #000000;
+  --app-bar-border-color: #333333;
+  --app-bar-font-color: #4BD5EE;
+  --primary-heading-font-color: #4BD5EE;
+  --radar-font-color: #4BD5EE;
+  --radar-background-color: #000000;
+  --radar-grid-color: #3C4858;
 }
 
 html[data-theme="dark"] {
-  /* global colors */
-  --primaryTheme: #333;
-  --primaryBg: #000;
-  --primaryText: #ABB1BA;
-  --primaryButtonText: #fff;
-  --primaryBorderBg: #3C4858;
-  --activeSelectionBg: rgba(0, 0, 0, 0.18);
-  --primaryShadowBg: rgba(8, 8, 8, 0.7);
+    --default-background-color: #000000;
+    --default-font-color: #ABB1BA;
+    --card-border-color: #3C4858;
+    --card-background-color: #333333;
+    --button-background-color: #4BD5EE;
+    --button-border-color: #E5E9F2;
+    --button-font-color: none;
+    --outline-button-background-color: #3C4858;
+    --outline-button-border-color: #333333;
+    --outline-button-font-color: inherit;
+    --input-background-color: #FFFFFF;
+    --input-border-color: #3C4858;
+    --input-font-color: #273444;
+    --app-bar-background-color: #33333;
+    --app-bar-border-color: #3C4858;
+    --app-bar-font-color: #4BD5EE;
+    --primary-heading-font-color: #FFE300;
+    --radar-font-color: #FFE300;
+    --radar-background-color: #000000;
+    --radar-grid-color: #333333;
 }

@@ -8,6 +8,7 @@ import Footer from './components/common/Footer';
 import Navigation from './components/common/Navigation';
 import Notification from './components/common/Notification';
 import Routes from './Routes';
+import Button from './components/common/Button';
 
 export default class App extends Component {
   constructor(props) {
@@ -42,8 +43,7 @@ export default class App extends Component {
           userLoggedIn={this.userLoggedIn}
         />
         <main className='content'>
-          <Notification />
-          <Navigation />
+          <Button>alabala</Button>
           <Routes />
         </main>
         <Footer />
