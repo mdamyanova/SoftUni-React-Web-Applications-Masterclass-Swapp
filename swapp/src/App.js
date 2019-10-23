@@ -5,10 +5,7 @@ import observer from './infrastructure/observer';
 
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
-import Navigation from './components/common/Navigation';
-import Notification from './components/common/Notification';
 import Routes from './Routes';
-import Button from './components/common/Button';
 import LoginForm from './components/common/LoginForm';
 
 export default class App extends Component {
