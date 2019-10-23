@@ -36,8 +36,8 @@ html[data-theme="dark"] {
     --card-border-color: #3C4858;
     --card-background-color: #333333;
     --button-background-color: #4BD5EE;
-    --button-border-color: #E5E9F2;
-    --button-font-color: none;
+    --button-border-color: none;
+    --button-font-color: #FFE300;
     --outline-button-background-color: #3C4858;
     --outline-button-border-color: #333333;
     --outline-button-font-color: inherit;
