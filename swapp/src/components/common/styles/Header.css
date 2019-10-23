@@ -1,0 +1,25 @@
+.header {
+    height: 70px;
+    box-shadow: 0 0 12px 3px var(--primaryShadowBg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .header__logo {
+    font-size: 30px;
+    color: var(--primaryTheme);
+    font-weight: 600;
+  }
+  
+  .header__right {
+    padding: 0 15px;
+    height: 32px;
+    background: var(--primaryTheme);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--primaryButtonText);
+    border-radius: 20px;
+  }
+  

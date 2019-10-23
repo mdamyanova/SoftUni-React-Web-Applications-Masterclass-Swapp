@@ -1,0 +1,36 @@
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+html {
+  /* global colors */
+  --primaryTheme: #4E5B6E;
+
+  --primaryBg: #E8EAED;
+
+  --primaryText: #212121;
+  --secondaryText: #7b7b7b;
+
+  --primaryButtonText: #E5E9F2;
+
+  --primaryBorderBg: #E5E9F2;
+
+  --activeSelectionBg: rgba(162, 162, 162, 0.1);
+
+  --primaryShadowBg: rgba(204, 204, 204, 0.7);
+}
+
+html[data-theme="dark"] {
+  /* global colors */
+  --primaryTheme: #333;
+  --primaryBg: #000;
+  --primaryText: #ABB1BA;
+  --primaryButtonText: #fff;
+  --primaryBorderBg: #3C4858;
+  --activeSelectionBg: rgba(0, 0, 0, 0.18);
+  --primaryShadowBg: rgba(8, 8, 8, 0.7);
+}

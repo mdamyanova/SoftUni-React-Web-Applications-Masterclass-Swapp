@@ -14,10 +14,21 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      username: ''
+      username: '',
+      theme: 'light'
     };
-
+    this.toggleTheme = this.toggleTheme.bind(this);
     observer.subscribe(observer.events.loginUser, this.userLoggedIn);
+  }
+
+  toggleTheme() {
+    const theme = this.state.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.classList.add('color-theme-in-transition');
+    this.setState({ theme });
+    document.documentElement.setAttribute('data-theme', theme);
+    window.setTimeout(() => {
+      document.documentElement.classList.remove('color-theme-in-transition');
+    }, 1000);
   }
 
   userLoggedIn = username => this.setState({ username });
@@ -26,6 +37,7 @@ export default class App extends Component {
     return (
       <div className='container'>
         <Header
+          toggleTheme={this.toggleTheme}
           username={this.state.username}
           userLoggedIn={this.userLoggedIn}
         />
