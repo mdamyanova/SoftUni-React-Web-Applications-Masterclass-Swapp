@@ -44,7 +44,6 @@ export default class App extends Component {
           <LoginForm />
           <Routes />
         </main>
-        <Footer />
       </div>
     );
   }
