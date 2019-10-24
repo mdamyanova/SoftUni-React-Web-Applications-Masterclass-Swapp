@@ -3,12 +3,11 @@ import { Route, Switch } from 'react-router-dom';
 
 import LoginPage from './components/user/LoginPage';
 import Logout from './components/user/Logout';
-import EpisodesPage from './components/episodes/EpisodesPage';
-import EpisodePage from './components/episodes/EpisodePage';
-import CharactersPage from './components/characters/CharactersPage';
-import CharacterPage from './components/characters/CharacterPage';
-import StarshipPage from './components/starships/StarshipPage';
-
+import EpisodesPage from './screens/episodes/EpisodesPage';
+import EpisodePage from './screens/episodes/EpisodePage';
+import CharactersPage from './screens/characters/CharactersPage';
+import CharacterPage from './screens/characters/CharacterPage';
+import StarshipPage from './screens/starships/StarshipPage';
 
 const Routes = () => (
   <Switch>
