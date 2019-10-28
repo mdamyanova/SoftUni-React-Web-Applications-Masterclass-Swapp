@@ -1,5 +1,29 @@
+.screen {
+  width: 100%;
+}
+
+/*The whole wrapper*/
+.container {
+}
+
+/*Logo name*/
+.appName {
+  font-family: DistantGalaxy;
+  color: var(--logo-font-color);
+  text-align: center;
+}
+
+/*Form Wrapper*/
+.formContainer {
+  background-color: var(--card-background-color);
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 10px;
+}
+
+
+/*Form*/
 .form {
-  width: 420px;
   margin: 0 auto;
   padding: 56px;
   display: flex;
@@ -8,6 +32,7 @@
   border-radius: 8px;
 }
 
+/*Error Message*/
 .error_message {
   color: #e27164;
   font-weight: bold;

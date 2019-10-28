@@ -13,9 +13,9 @@ const Routes = () => (
   <Switch>
     <Route path='/login' component={LoginPage} />
     <Route path="/logout" component={Logout} />
-    <Route path="/episodes" component={EpisodesPage} />
+    <Route exact path="/episodes" component={EpisodesPage} />
     <Route path="/episodes/:episodeId" component={EpisodePage} />
-    <Route path="/characters" component={CharactersPage} />
+    <Route exact path="/characters" component={CharactersPage} />
     <Route path="/characters/:characterId" component={CharacterPage} />
     <Route path="/starships/:starshipId" component={StarshipPage} />
     <Route component={EpisodesPage} />

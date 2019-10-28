@@ -14,6 +14,9 @@ const Header = ({ toggleTheme }) => (
       <NavLink to='/characters' className='nav' activeClassName='active'>
         Characters
       </NavLink>
+      <NavLink to='/characters/1' className='nav' activeClassName='active'>
+        Character
+      </NavLink>
     </div>
   </div>
 );

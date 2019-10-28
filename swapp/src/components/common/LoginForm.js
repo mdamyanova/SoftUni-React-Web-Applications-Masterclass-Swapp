@@ -37,26 +37,31 @@ class LoginForm extends Component {
     );
 
     return (
-      <form className='form' onSubmit={this.handleSubmit}>
-        {LoginErrorMessage}
-        <Input
-          type='text'
-          placeholder='Email'
-          name='email'
-          value={email}
-          onChange={this.handleInputChange}
-        />
-        <Input
-          type='password'
-          placeholder='Password'
-          name='password'
-          value={password}
-          onChange={this.handleInputChange}
-        />
-        <Button type='submit'>
-          Login
-        </Button>
-      </form>
+      <div className='screen'>
+        <div className="container">
+        <h2 className='appName'>SWAPP</h2>
+        <div className='formContainer'>
+          <form className='form' onSubmit={this.handleSubmit}>
+            {LoginErrorMessage}
+            <Input
+              type='text'
+              placeholder='Email'
+              name='email'
+              value={email}
+              onChange={this.handleInputChange}
+            />
+            <Input
+              type='password'
+              placeholder='Password'
+              name='password'
+              value={password}
+              onChange={this.handleInputChange}
+            />
+            <Button type='submit'>Login</Button>
+          </form>
+        </div>
+        </div>
+      </div>
     );
   }
 }

@@ -1,0 +1,14 @@
+.row {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+/*TODO - variables*/
+.data_label {
+  color: 'red';
+}
+
+.data_value {
+  color: 'yellow';
+}
