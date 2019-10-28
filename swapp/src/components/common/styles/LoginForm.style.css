@@ -4,10 +4,12 @@
 
 /*The whole wrapper*/
 .container {
+ 
 }
 
 /*Logo name*/
 .appName {
+  font-size: 100px;
   font-family: DistantGalaxy;
   color: var(--logo-font-color);
   text-align: center;
@@ -33,7 +35,7 @@
 }
 
 /*Error Message*/
-.error_message {
+.errorMessage {
   color: #e27164;
   font-weight: bold;
   align-self: flex-start;

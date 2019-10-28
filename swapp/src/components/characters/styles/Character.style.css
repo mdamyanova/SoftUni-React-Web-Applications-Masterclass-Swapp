@@ -1,0 +1,23 @@
+/*TODO-Colors*/
+.character {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  width: 280px;
+  margin: 8px 16px;
+  background-color: var(--card-background-color);
+  color: var(--primary-heading-font-color);
+  border-radius: 8px;
+}
+
+.image {
+  border-radius: 8px 0 0 8px;
+  width: 60px;
+}
+
+.text {
+  color: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px 8px 0 0;
+}

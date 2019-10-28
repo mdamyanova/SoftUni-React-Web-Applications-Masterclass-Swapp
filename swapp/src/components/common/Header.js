@@ -4,10 +4,10 @@ import './styles/Header.style.css';
 
 const Header = ({ toggleTheme }) => (
   <div className='header'>
-    <a className='header_logo' href='#' onClick={e => toggleTheme()}>
+    <a className='headerLogo' href='#' onClick={e => toggleTheme()}>
       SWAPP
     </a>
-    <div className='header_right'>
+    <div className='headerRight'>
     <NavLink to='/episodes' className='nav' activeClassName='active'>
         Episodes
       </NavLink>

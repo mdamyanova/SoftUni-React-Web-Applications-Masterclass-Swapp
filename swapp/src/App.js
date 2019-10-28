@@ -41,7 +41,6 @@ export default class App extends Component {
           userLoggedIn={this.userLoggedIn}
         />
         <main className='content'>
-          <LoginForm />
           <Routes />
         </main>
       </div>

@@ -7,14 +7,14 @@
   padding: 0 40px;
 }
 
-.header_logo {
+.headerLogo {
   font-family: DistantGalaxy;
   font-size: 30px;
   color: var(--logo-font-color);
   font-weight: 600;
 }
 
-.header_right {
+.headerRight {
   padding: 0 15px;
   height: 32px;
   font-size: 13px;
@@ -24,4 +24,6 @@
 
 .nav {
   color: var(--app-bar-font-color);
+  padding: 5px;
+  font-size: 14px;
 }
