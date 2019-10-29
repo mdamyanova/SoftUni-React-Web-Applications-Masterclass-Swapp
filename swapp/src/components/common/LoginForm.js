@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SolidButton from './SolidButton';
-import Input from './Input';
+import InputField from './InputField';
 import './styles/LoginForm.style.css';
 import { AUTH } from '../../constants';
 
@@ -79,14 +79,14 @@ class LoginForm extends Component {
           <div className='formContainer'>
             <form className='form' onSubmit={this.handleSubmit}>
               {LoginErrorMessage}
-              <Input
+              <InputField
                 type='text'
                 placeholder='Email'
                 name='email'
                 value={email}
                 onChange={this.handleInputChange}
               />
-              <Input
+              <InputField
                 type='password'
                 placeholder='Password'
                 name='password'
