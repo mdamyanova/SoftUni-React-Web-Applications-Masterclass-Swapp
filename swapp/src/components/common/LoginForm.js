@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from './Button';
+import SolidButton from './SolidButton';
 import Input from './Input';
 import './styles/LoginForm.style.css';
 import { AUTH } from '../../constants';
@@ -93,7 +93,7 @@ class LoginForm extends Component {
                 value={password}
                 onChange={this.handleInputChange}
               />
-              <Button type='submit'>Login</Button>
+              <SolidButton onClick={() => {}} text='Login' />
             </form>
           </div>
         </div>
