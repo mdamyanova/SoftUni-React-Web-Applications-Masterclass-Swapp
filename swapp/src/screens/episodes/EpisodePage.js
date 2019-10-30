@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
-import { useQuery } from '@apollo/react-hooks';
-import { AUTHENTICATED_QUERY } from '../../queries/userQueries';
-
-const EpisodePage = () => {
+import React from 'react';
+const EpisodePage = (id) => {
  
     return <div>Episode Page</div>;
   

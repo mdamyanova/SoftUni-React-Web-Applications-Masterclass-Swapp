@@ -8,3 +8,29 @@
 html {
   background-color: var(--default-background-color);
 }
+
+.episodesCartText {
+  display: -webkit-box;
+  height: 200px;
+  font-size: medium;
+  margin: 0 auto;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.cardBorder {
+  border: 2px solid;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.episodesList {
+  width: 256px;
+}
+
+.episodesList:hover {
+  border-color: var(--hover-color);
+}

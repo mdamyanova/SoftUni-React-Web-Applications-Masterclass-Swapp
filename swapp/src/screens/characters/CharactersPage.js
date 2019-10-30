@@ -1,41 +1,9 @@
-import React, { Component, Fragment } from 'react';
-import CharactersList from '../../components/characters/CharactersList';
-import Character from '../../components/characters/Character';
+import React from 'react';
 
-class Characters extends Component {
-  constructor(props) {
-    super(props);
+// TODO
+const CharactersPage = ({}) => {
+  // TODO
+  return <div>CharactersPage</div>
+};
 
-    this.state = {
-      characters: []
-    };
-  }
-
-  async componentDidMount() {
-    try {
-      // GET Characters
-     
-    } catch (e) {
-      this.setState({ characters: [] });
-    }
-  }
-
-  navigationHandler = card => {
-    this.props.history.push(`/characters/${card.id}`, card);
-  };
-
-  render() {
-    return (
-      <Fragment>
-        <div>Characters Page</div>
-        <CharactersList
-          characters={this.state.characters}
-          component={Character}
-          cardNavigation={this.navigationHandler}
-        />
-      </Fragment>
-    );
-  }
-}
-
-export default Characters;
+export default CharactersPage;

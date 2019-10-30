@@ -1,16 +1,15 @@
 import React from 'react';
-import { Redirect } from "react-router-dom";
-import { useQuery } from '@apollo/react-hooks';
-import { AUTHENTICATED_QUERY } from '../../queries/userQueries';
+import EpisodesList from '../../components/episodes/EpisodesList';
+import { Tiles } from '@rebass/layout';
 
 const EpisodesPage = () => {
-  const authQuery = useQuery(AUTHENTICATED_QUERY).data;
-  if (!authQuery.authenticated) {
-      return <Redirect to='/login' />;
-     } 
- 
   return (
-    <div>EpisodesPage</div>
+      <div>EpisodesPage</div>
+   /*<Tiles columns={[1, 2, 3]}>
+      {episodes.map(episode => {
+        return <EpisodesList key={episode.name} episode={episode} />;
+      })}
+    </Tiles>*/
   );
 };
 

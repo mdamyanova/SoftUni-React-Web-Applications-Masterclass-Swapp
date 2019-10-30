@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from './styles/CharacterPage.style.css';
 import CharacterDetails from '../../components/character/CharacterDetails';
 
 class CharacterPage extends Component {
