@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { ApolloProvider } from '@apollo/react-hooks';
+import { unregister } from './serviceWorker';
+import client from './client';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import { unregister } from './serviceWorker';
 import './theme.css';
-import './assets/fonts/SfDistantGalaxy-0l3d.ttf';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <ApolloProvider client={client}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ApolloProvider>,
   document.getElementById('root')
 );
+
 unregister();

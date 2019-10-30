@@ -27,4 +27,5 @@ SolidButton.propTypes = {
 SolidButton.defaultProps = {
   style: {}
 };
+
 export default SolidButton;

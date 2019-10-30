@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './styles/Header.style.css';
+import SwappLogo from './SwappLogo';
 
-const Header = ({ toggleTheme }) => (
+const Header = () => (
   <div className='header'>
-    <a className='headerLogo' href='#' onClick={e => toggleTheme()}>
-      SWAPP
-    </a>
+    <div className='headerLogo'>
+      <SwappLogo />
+    </div>
     <div className='headerRight'>
-    <NavLink to='/episodes' className='nav' activeClassName='active'>
+      <NavLink to='/episodes' className='nav' activeClassName='active'>
         Episodes
       </NavLink>
       <NavLink to='/characters' className='nav' activeClassName='active'>

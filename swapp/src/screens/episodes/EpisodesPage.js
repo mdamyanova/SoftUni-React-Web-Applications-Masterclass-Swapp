@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Redirect } from "react-router-dom";
+import { useQuery } from '@apollo/react-hooks';
+import { AUTHENTICATED_QUERY } from '../../queries/userQueries';
 
-export default class EpisodesPage extends Component {
-  render() {
-   // if (!sessionStorage.getItem('authtoken')) {
-   //   return <Redirect to='/' />;
-   // }
+const EpisodesPage = () => {
+  const authQuery = useQuery(AUTHENTICATED_QUERY).data;
+  if (!authQuery.authenticated) {
+      return <Redirect to='/login' />;
+     } 
+ 
+  return (
+    <div>EpisodesPage</div>
+  );
+};
 
-    return <section>EpisodesPage</section>;
-  }
-}
+export default EpisodesPage;

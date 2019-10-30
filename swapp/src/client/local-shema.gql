@@ -1,0 +1,4 @@
+extend type Query {
+    authenticated: Boolean!
+    theme:String!
+}

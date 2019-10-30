@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-
-import LoginPage from './components/user/LoginPage';
-import Logout from './components/user/Logout';
+import LoginPage from './screens/login/LoginPage';
 import EpisodesPage from './screens/episodes/EpisodesPage';
 import EpisodePage from './screens/episodes/EpisodePage';
 import CharactersPage from './screens/characters/CharactersPage';
@@ -12,7 +10,6 @@ import StarshipPage from './screens/starships/StarshipPage';
 const Routes = () => (
   <Switch>
     <Route path='/login' component={LoginPage} />
-    <Route path="/logout" component={Logout} />
     <Route exact path="/episodes" component={EpisodesPage} />
     <Route path="/episodes/:episodeId" component={EpisodePage} />
     <Route exact path="/characters" component={CharactersPage} />

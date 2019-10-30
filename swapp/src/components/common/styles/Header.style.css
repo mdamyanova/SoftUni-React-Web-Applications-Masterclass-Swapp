@@ -7,13 +7,6 @@
   padding: 0 40px;
 }
 
-.headerLogo {
-  font-family: DistantGalaxy;
-  font-size: 30px;
-  color: var(--logo-font-color);
-  font-weight: 600;
-}
-
 .headerRight {
   padding: 0 15px;
   height: 32px;
