@@ -3,6 +3,7 @@ import { Box, Card, Text, Flex } from 'rebass';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { userConstants } from '../../constants/userConstants';
 import { LOG_IN } from '../../queries/userQueries';
+import { history } from '../../utils/history';
 import SwappLogo from '../../components/common/SwappLogo';
 import SolidButton from '../../components/common/SolidButton';
 import InputField from '../../components/common/InputField';
@@ -25,6 +26,7 @@ const LoginPage = () => {
 
       localStorage.setItem('user', JSON.stringify(user));
       client.writeData({ data: { authenicated: true } });
+      history.push('/');
       window.location.reload();
     }
   });
