@@ -1,15 +1,14 @@
 import React from 'react';
-import EpisodesList from '../../components/episodes/EpisodesList';
-import { Tiles } from '@rebass/layout';
+import { useQuery } from '@apollo/react-hooks';
+import { ALL_EPISODES } from '../../queries/episodeQueries';
 
 const EpisodesPage = () => {
+  const { data, error, loading } = useQuery(ALL_EPISODES);
+
+  console.log(error);
+  
   return (
-      <div>EpisodesPage</div>
-   /*<Tiles columns={[1, 2, 3]}>
-      {episodes.map(episode => {
-        return <EpisodesList key={episode.name} episode={episode} />;
-      })}
-    </Tiles>*/
+   <div>EpisodesPage</div>
   );
 };
 
