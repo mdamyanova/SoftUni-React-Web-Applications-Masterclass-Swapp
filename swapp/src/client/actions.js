@@ -1,6 +1,7 @@
 import { alertConstants } from '../constants/alertCnstants';
 import { userConstants } from '../constants/userConstants';
 import { userService } from '../services/userService';
+import { episodesService } from '../services/episodesService';
 
 const success = message => ({ type: alertConstants.SUCCES, message });
 const error = message => ({ type: alertConstants.ERROR, message });

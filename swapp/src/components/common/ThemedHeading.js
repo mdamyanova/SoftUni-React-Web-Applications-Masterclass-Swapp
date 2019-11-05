@@ -17,7 +17,7 @@ const ThemedHeading = ({ text, style }) => {
 };
 
 ThemedHeading.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   style: PropTypes.object
 };
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Card, Text, Flex } from 'rebass';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
 import { userConstants } from '../../constants/userConstants';
-import { LOG_IN } from '../../queries/userQueries';
+import { LOG_IN_MUTATION } from '../../queries/userQueries';
 import { history } from '../../utils/history';
 import SwappLogo from '../../components/common/SwappLogo';
 import SolidButton from '../../components/common/SolidButton';
@@ -17,10 +17,11 @@ const LoginPage = () => {
 
   const client = useApolloClient();
 
-  const [login, { error }] = useMutation(LOG_IN, {
+  const [login, { error }] = useMutation(LOG_IN_MUTATION, {
     onCompleted: ({ signIn: loginData }) => {
       const user = {
         user: userEmail,
+        password: userPass,
         token: loginData.token
       };
 

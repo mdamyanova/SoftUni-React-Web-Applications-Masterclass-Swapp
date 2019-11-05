@@ -32,7 +32,8 @@ CardBlank.propTypes = {
 
 CardBlank.defaultProps = {
   className: '',
-  style: {}
+  style: {},
+  hover: false
 };
 
 export default CardBlank;
