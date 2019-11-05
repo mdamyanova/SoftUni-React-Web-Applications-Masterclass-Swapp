@@ -13,7 +13,7 @@ const Routes = () => (
     <Route exact path="/episodes" component={EpisodesPage} />
     <Route path="/episodes/:filmId" component={EpisodePage} />
     <Route exact path="/characters" component={CharactersPage} />
-    <Route path="/characters/:characterId" component={CharacterPage} />
+    <Route path="/characters/:personId" component={CharacterPage} />
     <Route path="/starships/:starshipId" component={StarshipPage} />
     <Route component={EpisodesPage} />
   </Switch>

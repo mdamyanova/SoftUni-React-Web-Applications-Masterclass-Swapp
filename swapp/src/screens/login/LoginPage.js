@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Box, Card, Text, Flex } from 'rebass';
 import { useApolloClient, useMutation } from '@apollo/react-hooks';
+import { Box, Card, Text, Flex } from 'rebass';
 import { userConstants } from '../../constants/userConstants';
 import { LOG_IN_MUTATION } from '../../queries/userQueries';
 import { history } from '../../utils/history';
 import SwappLogo from '../../components/common/SwappLogo';
-import SolidButton from '../../components/common/SolidButton';
-import InputField from '../../components/common/InputField';
+import SolidButton from '../../components/common/forms/SolidButton';
+import InputField from '../../components/common/forms/InputField';
 
 const LoginPage = () => {
   const [userEmail, setUserEmail] = useState('');
@@ -96,4 +96,5 @@ const LoginPage = () => {
     </Card>
   );
 };
+
 export default LoginPage;

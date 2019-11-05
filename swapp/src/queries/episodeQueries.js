@@ -1,8 +1,6 @@
 import gql from 'graphql-tag.macro';
-import {
-  EPISODE_FRAGMENT,
-  PEOPLE_CONNECTION_FRAGMENT,
-} from './fragments';
+import { EPISODE_FRAGMENT } from './fragments/episodeFragments';
+import { PEOPLE_CONNECTION_FRAGMENT } from './fragments/characterFraments';
 
 export const ALL_EPISODES_QUERY = gql`
   query AllEpisodesQuery($first: Int!, $after: String, $filter: EpisodeFilter) {
