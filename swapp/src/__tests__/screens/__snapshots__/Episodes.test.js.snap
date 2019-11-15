@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Episodes component Renders episodes 1`] = `
+<div
+  className="css-1qfox3l"
+>
+  Network error: No more mocked responses for the query: query AllEpisodesQuery($first: Int!, $after: String, $filter: EpisodeFilter) {
+  allEpisodes(first: $first, after: $after, filter: $filter) {
+    edges {
+      node {
+        ...EpisodeFragment
+      }
+      cursor
+    }
+    pageInfo {
+      hasNextPage
+    }
+    totalCount
+  }
+}
+
+fragment EpisodeFragment on Episode {
+  id
+  title
+  episodeId
+  openingCrawl
+  image
+  director
+  releaseDate
+}
+, variables: {"first":99}
+</div>
+`;
