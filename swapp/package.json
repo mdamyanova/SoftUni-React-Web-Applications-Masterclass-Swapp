@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",
+    "@apollo/react-testing": "^3.1.3",
     "@emotion/styled": "^10.0.23",
     "@rebass/forms": "^4.0.6",
     "@rebass/layout": "^4.0.6",
@@ -26,7 +27,8 @@
     "react-icons": "^3.8.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "rebass": "^4.0.7"
+    "rebass": "^4.0.7",
+    "waait": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

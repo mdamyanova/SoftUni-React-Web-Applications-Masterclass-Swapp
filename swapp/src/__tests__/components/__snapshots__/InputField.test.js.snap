@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputField /> should match snapshot 1`] = `
+<ForwardRef
+  css="
+        background-color: var(--input-background-color);
+        color: var(--input-font-color);
+        border-color: var(--input-border-color);
+        border-radius: 5px;
+      "
+  id="email"
+  name="email"
+  onChange={[Function]}
+  placeholder="email"
+  type="email"
+/>
+`;

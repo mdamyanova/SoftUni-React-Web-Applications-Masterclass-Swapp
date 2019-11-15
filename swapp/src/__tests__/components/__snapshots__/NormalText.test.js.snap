@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NormalText /> should match snapshot 1`] = `
+<ForwardRef
+  className="testText"
+  css="
+        color: var(--default-font-color);
+      "
+  p={2}
+  sx={Object {}}
+>
+  Test Normal Text
+</ForwardRef>
+`;

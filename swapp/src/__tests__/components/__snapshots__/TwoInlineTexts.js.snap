@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TwoInlineTexts /> should match snapshot 1`] = `
+<Styled(div)
+  sx={
+    Object {
+      "textAlign": "left",
+    }
+  }
+>
+  <ForwardRef
+    css="
+          color: var(--default-font-color);
+        "
+    display="inline-block"
+    fontSize={1}
+    px={2}
+  >
+    first
+  </ForwardRef>
+  <ThemedHeading
+    style={
+      Object {
+        "display": "inline-block",
+        "fontSize": 1,
+      }
+    }
+    text="second"
+  />
+</Styled(div)>
+`;

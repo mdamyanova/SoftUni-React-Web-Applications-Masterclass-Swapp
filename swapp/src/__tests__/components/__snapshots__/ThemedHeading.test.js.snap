@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ThemedHeading /> should match snapshot 1`] = `
+<ForwardRef
+  css="
+        color: var(--primary-heading-font-color);
+      "
+  fontWeight={900}
+  sx={Object {}}
+>
+  test
+</ForwardRef>
+`;
